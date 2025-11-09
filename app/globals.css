@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Colors - Aged Paper Aesthetic */
+  --paper-bg: #f4f1ea;
+  --paper-highlight: #faf8f3;
+  --ink-primary: #2c2416;
+  --ink-secondary: #4a3f2f;
+  --leather-accent: #8b7355;
+  --gold-cta: #d4a574;
+  --gold-hover: #c29660;
+  --shadow-deep: #1a1410;
+  --error-red: #8b4545;
+  --success-green: #5a6b4a;
+
+  /* Typography */
+  --font-family-display: 'Cormorant Garamond', Georgia, serif;
+  --font-family-body: 'Courier Prime', 'Courier New', monospace;
+  --font-family-ui: 'Inter', -apple-system, system-ui, sans-serif;
+
+  /* Spacing */
+  --space-18: 4.5rem;
+  --space-22: 5.5rem;
+
+  /* Animation */
+  --ease-gentle: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-paper: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 800ms;
+  --duration-glacial: 2000ms;
+}
+
+@theme inline {
+  /* Color Palette */
+  --color-paper: #f4f1ea;
+  --color-paper-light: #faf8f3;
+  --color-ink: #2c2416;
+  --color-ink-light: #4a3f2f;
+  --color-leather: #8b7355;
+  --color-gold: #d4a574;
+  --color-gold-dark: #c29660;
+  --color-shadow: #1a1410;
+  --color-error: #8b4545;
+  --color-success: #5a6b4a;
+
+  /* Font Families */
+  --font-display: var(--font-family-display);
+  --font-body: var(--font-family-body);
+  --font-ui: var(--font-family-ui);
+
+  /* Spacing Extensions */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+}
+
+body {
+  background: var(--paper-bg);
+  color: var(--ink-primary);
+  font-family: var(--font-family-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,206 @@
+{
+  "free": [
+    {
+      "id": 1,
+      "section": "Where You Are",
+      "question": "What's your biggest struggle right now?",
+      "minChars": 50,
+      "helpText": "Start with the first thing that comes to mind",
+      "aiGuidance": "Identify root cause, not symptoms. Acknowledge weight without minimizing."
+    },
+    {
+      "id": 2,
+      "section": "Where You Are",
+      "question": "What are you most afraid of?",
+      "minChars": 40,
+      "helpText": "What keeps you up at night?",
+      "aiGuidance": "Name fear specifically. Connect to deeper need (fear of judgment = need for belonging)."
+    },
+    {
+      "id": 3,
+      "section": "Where You Are",
+      "question": "What keeps you feeling stuck?",
+      "minChars": 50,
+      "helpText": "What would change if this barrier disappeared?",
+      "aiGuidance": "Distinguish between circumstance (external) and mindset (internal)."
+    },
+    {
+      "id": 4,
+      "section": "Where You Are",
+      "question": "Who do you feel you should be (but aren't)?",
+      "minChars": 40,
+      "helpText": "Whose voice is this expectation? Parents? Society? Past you?",
+      "aiGuidance": "Reveal gap between 'supposed to' and 'want to'."
+    },
+    {
+      "id": 5,
+      "section": "What You Want",
+      "question": "What do you want but don't believe you can have?",
+      "minChars": 50,
+      "helpText": "There's no wrong answer here",
+      "aiGuidance": "Validate both wanting AND doubt. Separate desire from belief about deservingness."
+    },
+    {
+      "id": 6,
+      "section": "What You Want",
+      "question": "Who do you want to become?",
+      "minChars": 60,
+      "helpText": "Think about who you admire and why",
+      "aiGuidance": "If vague ('happy'), ask for specifics. Paint picture of that person's day-to-day."
+    },
+    {
+      "id": 7,
+      "section": "What You Want",
+      "question": "What would make you feel 'enough'?",
+      "minChars": 40,
+      "helpText": "What's the feeling underneath the achievement?",
+      "aiGuidance": "If answer is achievement-based, gently challenge - will it really be enough?"
+    },
+    {
+      "id": 8,
+      "section": "Inner Voice",
+      "question": "What do you wish someone would tell you?",
+      "minChars": 40,
+      "helpText": "If someone who truly understood you could say one thing...",
+      "aiGuidance": "This is what they're asking for - deliver this in letter."
+    },
+    {
+      "id": 9,
+      "section": "Inner Voice",
+      "question": "If you were wiser, what would you tell yourself?",
+      "minChars": 50,
+      "helpText": "What would your best friend tell you?",
+      "aiGuidance": "Synthesize previous answers. Echo their own wisdom back."
+    },
+    {
+      "id": 10,
+      "section": "Inner Voice",
+      "question": "What does your future self need to hear right now?",
+      "minChars": 50,
+      "helpText": "Imagine you're 5 years ahead, looking back at this moment",
+      "aiGuidance": "This is the anchor for the entire letter. Use this heavily."
+    }
+  ],
+  "premium": [
+    {
+      "id": 11,
+      "section": "Patterns",
+      "question": "What relationship patterns keep repeating?",
+      "minChars": 60,
+      "helpText": "Same conflicts? Same disappointments? Same dynamics?",
+      "aiGuidance": "Observe without blaming. Patterns exist for protection."
+    },
+    {
+      "id": 12,
+      "section": "Patterns",
+      "question": "When do you feel most like yourself?",
+      "minChars": 50,
+      "helpText": "When do you feel free? Alive? At home in your skin?",
+      "aiGuidance": "These are breadcrumbs to who they really are."
+    },
+    {
+      "id": 13,
+      "section": "Patterns",
+      "question": "When do you feel like a stranger to yourself?",
+      "minChars": 50,
+      "helpText": "When are you pretending? Performing? Wearing a mask?",
+      "aiGuidance": "Highlight gap between Q12 and Q13. What's different?"
+    },
+    {
+      "id": 14,
+      "section": "Patterns",
+      "question": "What advice do you give others but don't follow yourself?",
+      "minChars": 40,
+      "helpText": "What do you tell friends that you need to hear?",
+      "aiGuidance": "Gentle confrontation - why is it easier to see for others?"
+    },
+    {
+      "id": 15,
+      "section": "Patterns",
+      "question": "Where are you lying to yourself?",
+      "minChars": 50,
+      "helpText": "This is safe space. What truth are you avoiding?",
+      "aiGuidance": "Handle with extreme care. Frame as self-protection, not character flaw."
+    },
+    {
+      "id": 16,
+      "section": "Shadows",
+      "question": "What are you avoiding that you know you need to face?",
+      "minChars": 50,
+      "helpText": "Facing it doesn't mean fixing it. Just acknowledging.",
+      "aiGuidance": "Acknowledge avoidance is protective. Differentiate 'facing' from 'fixing'."
+    },
+    {
+      "id": 17,
+      "section": "Shadows",
+      "question": "What would you do if you weren't afraid of judgment?",
+      "minChars": 50,
+      "helpText": "If you knew no one would judge... what changes?",
+      "aiGuidance": "Remove external voices. Permission to want unconventional things."
+    },
+    {
+      "id": 18,
+      "section": "Shadows",
+      "question": "What part of yourself have you hidden or rejected?",
+      "minChars": 50,
+      "helpText": "What parts of you feel shameful? Wrong? Too much?",
+      "aiGuidance": "These parts need acknowledgment, not fixing. Compassion for all of self."
+    },
+    {
+      "id": 19,
+      "section": "Shadows",
+      "question": "What anger or resentment are you carrying?",
+      "minChars": 50,
+      "helpText": "Who are you angry at? What hasn't been said?",
+      "aiGuidance": "Anger is information. What boundary was crossed? What need wasn't met?"
+    },
+    {
+      "id": 20,
+      "section": "Shadows",
+      "question": "What grief have you not allowed yourself to feel?",
+      "minChars": 50,
+      "helpText": "What loss haven't you given yourself permission to mourn?",
+      "aiGuidance": "Tender territory. Space for complexity. Some things don't 'get better'."
+    },
+    {
+      "id": 21,
+      "section": "Becoming",
+      "question": "What does 'home' mean to you now, and what should it mean?",
+      "minChars": 60,
+      "helpText": "Where do you belong? Where should you belong?",
+      "aiGuidance": "'Home' = place where you can be yourself. What would that feel like?"
+    },
+    {
+      "id": 22,
+      "section": "Becoming",
+      "question": "If you had 5 years left to live, what would you change today?",
+      "minChars": 50,
+      "helpText": "What are you waiting for? What can't wait?",
+      "aiGuidance": "Memento mori. Clarifies priorities instantly."
+    },
+    {
+      "id": 23,
+      "section": "Becoming",
+      "question": "What legacy do you want to leave (even if just for yourself)?",
+      "minChars": 50,
+      "helpText": "How do you want to be remembered? By yourself, if no one else?",
+      "aiGuidance": "Legacy doesn't require audience. 'I became who I needed to be' is enough."
+    },
+    {
+      "id": 24,
+      "section": "Becoming",
+      "question": "What does your future self already know that you're still learning?",
+      "minChars": 50,
+      "helpText": "Imagine you're 5 years ahead. What became obvious?",
+      "aiGuidance": "This is THE question. Entire letter should answer this."
+    },
+    {
+      "id": 25,
+      "section": "Becoming",
+      "question": "What permission do you need to give yourself?",
+      "minChars": 40,
+      "helpText": "What are you waiting for permission to do/be/feel?",
+      "aiGuidance": "Permission to want, to fail, to be imperfect, to choose differently."
+    }
+  ]
+}
