@@ -15,7 +15,7 @@ export default function Home() {
         }}
       />
 
-      {/* SECTION 1: HERO - The Invitation */}
+      {/* SECTION 1: HERO - Founder Story */}
       <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20">
         <div className="max-w-3xl mx-auto text-center space-y-8 animate-in fade-in duration-1000">
           {/* Overline */}
@@ -23,20 +23,22 @@ export default function Home() {
             className="text-[11px] uppercase tracking-[0.4em] text-ink-light/40 font-ui"
             style={{ fontFamily: 'var(--font-family-ui)' }}
           >
-            A Letter from 2030
+            From someone who lost their letter
           </p>
 
           {/* Main Headline */}
           <h1
-            className="text-6xl md:text-8xl lg:text-9xl font-display font-light text-ink leading-[1.1] tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-ink leading-[1.15] tracking-tight"
             style={{
               fontFamily: 'var(--font-family-display)',
               fontWeight: 300
             }}
           >
-            Your future self
+            Five years ago,
             <br />
-            has something to say
+            I wrote to my future self.
+            <br />
+            Then I lost it.
           </h1>
 
           {/* Decorative Divider */}
@@ -44,20 +46,33 @@ export default function Home() {
             <div className="w-1 h-1 rounded-full bg-gold opacity-60" />
           </div>
 
-          {/* Subheadline */}
-          <p
-            className="text-lg md:text-xl font-body text-ink-light/80 leading-loose max-w-xl mx-auto"
+          {/* Story */}
+          <div
+            className="text-lg md:text-xl font-body text-ink-light/80 leading-loose max-w-xl mx-auto space-y-4"
             style={{
               fontFamily: 'var(--font-family-body)',
               lineHeight: 1.8
             }}
           >
-            Five years from now, you'll understand
-            <br />
-            what you can't see today.
-            <br />
-            Let them write you a letter.
-          </p>
+            <p>I searched everywhere. Never found it.</p>
+            <p>I looked for a tool that would keep it safe.</p>
+            <p>Nothing existed.</p>
+            <p className="font-semibold text-ink">So I built it.</p>
+          </div>
+
+          {/* Value Prop */}
+          <div className="pt-4">
+            <p
+              className="text-base md:text-lg font-ui text-ink-light/70 max-w-lg mx-auto leading-relaxed"
+              style={{ fontFamily: 'var(--font-family-ui)', lineHeight: 1.7 }}
+            >
+              Tomorrow's Letter keeps your words safe.
+              <br />
+              Write now. Read when you're ready.
+              <br />
+              You'll be a different person by then.
+            </p>
+          </div>
 
           {/* CTA */}
           <div className="pt-8">
@@ -66,12 +81,17 @@ export default function Home() {
               className="group inline-flex items-center gap-3 text-base font-ui text-ink border-b-2 border-ink pb-1 hover:border-gold hover:text-gold transition-all duration-500"
               style={{ fontFamily: 'var(--font-family-ui)' }}
             >
-              <span>Begin writing</span>
+              <span>Write your first letter</span>
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
           </div>
+
+          {/* Small Text */}
+          <p className="text-xs font-ui text-ink-light/50" style={{ fontFamily: 'var(--font-family-ui)' }}>
+            1 free letter • No credit card • Delivered when you choose
+          </p>
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
@@ -291,8 +311,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Pricing Grid */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Pricing Grid - 2 Tiers */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Free Tier */}
             <div className="bg-paper border border-leather/20 p-10 hover:shadow-xl transition-all duration-500">
               <div className="text-sm uppercase tracking-[0.3em] text-ink-light/60 mb-4 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
@@ -310,7 +330,7 @@ export default function Home() {
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>3 time capsules</span>
+                  <span>1 letter (lifetime)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -322,13 +342,25 @@ export default function Home() {
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>Letter preview</span>
+                  <span>Full letter (1000 words)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>1 year max delay</span>
+                  <span>Up to 3 months ahead</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Email delivery</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-ink-light/30 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-ink-light/50">Unlock early: $9.99</span>
                 </li>
               </ul>
 
@@ -337,94 +369,72 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Annual - Featured */}
+            {/* Lifetime - Featured */}
             <div className="relative bg-ink text-paper border-2 border-gold p-10 transform md:scale-105 shadow-2xl">
-              {/* Badge */}
+              {/* Early Bird Badge */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-gold text-ink text-xs font-semibold uppercase tracking-wider rounded-full font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
-                Recommended
+                🔥 First 100: $79
               </div>
 
               <div className="text-sm uppercase tracking-[0.3em] text-paper/60 mb-4 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
                 Best Value
               </div>
 
-              <h3 className="text-3xl font-display font-semibold mb-2" style={{ fontFamily: 'var(--font-family-display)' }}>Annual</h3>
+              <h3 className="text-3xl font-display font-semibold mb-2" style={{ fontFamily: 'var(--font-family-display)' }}>Lifetime</h3>
 
               <div className="flex items-baseline mb-2">
-                <span className="text-7xl font-display font-light" style={{ fontFamily: 'var(--font-family-display)', fontWeight: 300 }}>$69</span>
-                <span className="text-sm text-paper/60 ml-2 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>/year</span>
+                <span className="text-7xl font-display font-light" style={{ fontFamily: 'var(--font-family-display)', fontWeight: 300 }}>$99</span>
               </div>
-              <p className="text-xs text-paper/50 mb-8 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>Save $51 vs monthly</p>
+              <p className="text-xs text-paper/50 mb-8 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>One payment, forever</p>
 
               <ul className="space-y-4 mb-10 text-base text-paper/90" style={{ fontFamily: 'var(--font-family-ui)' }}>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>Unlimited capsules</span>
+                  <span>Unlimited letters (forever)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>25 deep questions</span>
+                  <span>20 deep questions</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>Full letter (1500w)</span>
+                  <span>Full letter (1500 words)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  <span>5+ year delays</span>
+                  <span>Unlimited years (1-50 years)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Upload photos (10 per letter)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Upload video (2 min per letter)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span>Unlock early: FREE</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   <span>Priority support</span>
-                </li>
-              </ul>
-
-              <button className="w-full py-4 bg-gold text-ink text-sm font-semibold uppercase tracking-wider hover:bg-gold-dark transition-colors font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
-                Commit to Growth
-              </button>
-            </div>
-
-            {/* Lifetime */}
-            <div className="bg-paper border border-leather/20 p-10 hover:shadow-xl transition-all duration-500">
-              <div className="text-sm uppercase tracking-[0.3em] text-ink-light/60 mb-4 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
-                Founding Member
-              </div>
-
-              <h3 className="text-3xl font-display font-semibold text-ink mb-2" style={{ fontFamily: 'var(--font-family-display)' }}>Lifetime</h3>
-
-              <div className="flex items-baseline mb-2">
-                <span className="text-7xl font-display font-light text-ink" style={{ fontFamily: 'var(--font-family-display)', fontWeight: 300 }}>$199</span>
-              </div>
-              <p className="text-xs text-success line-through mb-8 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>Early bird: $149</p>
-
-              <ul className="space-y-4 mb-10 text-base font-ui text-ink-light/80" style={{ fontFamily: 'var(--font-family-ui)' }}>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Everything in Annual</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>Forever access</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span>VIP support</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -434,10 +444,19 @@ export default function Home() {
                 </li>
               </ul>
 
-              <button className="w-full py-4 bg-leather text-paper text-sm font-semibold uppercase tracking-wider hover:opacity-90 transition-opacity font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
-                One Payment, Forever
+              <button className="w-full py-4 bg-gold text-ink text-sm font-semibold uppercase tracking-wider hover:bg-gold-dark transition-colors font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
+                Get Lifetime Access
               </button>
             </div>
+          </div>
+
+          {/* Video Feature Value Prop */}
+          <div className="max-w-3xl mx-auto mt-16 text-center">
+            <p className="text-base font-ui text-ink-light/70 italic leading-relaxed" style={{ fontFamily: 'var(--font-family-ui)', lineHeight: 1.8 }}>
+              Capture your voice, your face, your energy. Watch yourself from 5 years ago.
+              <br />
+              You'll barely recognize who you were.
+            </p>
           </div>
         </div>
       </section>
@@ -511,11 +530,15 @@ export default function Home() {
             {[
               {
                 q: "How does time-locking work?",
-                a: "Your letter is stored encrypted on our servers and only sent to you on the date you choose. You'll see a preview immediately (first 200 words), but the full letter arrives via email when you're ready. It's like FutureMe, but with AI perspective."
+                a: "Your letter is stored encrypted on our servers and only sent to you on the date you choose. The full letter arrives via email when you're ready. It's like FutureMe, but with AI perspective instead of just your past words."
               },
               {
-                q: "Can I really not read it early?",
-                a: "The preview comes immediately. The full letter is time-locked—we built it this way intentionally. The magic is in forgetting what you wrote, then rediscovering it when you've changed. Honor system with technical guardrails."
+                q: "Can I unlock my letter early?",
+                a: "Free users can unlock early for $9.99. Lifetime members can unlock anytime for free. But we recommend waiting—the magic is in forgetting what you wrote, then rediscovering it when you've changed."
+              },
+              {
+                q: "Can I add photos or video?",
+                a: "Yes, Lifetime plan includes up to 10 photos and 2-minute video per letter. Capture your voice, your face, your energy. Watch yourself from 5 years ago—you'll barely recognize who you were."
               },
               {
                 q: "What if I lose access to my email?",
@@ -527,7 +550,7 @@ export default function Home() {
               },
               {
                 q: "What if I want a refund?",
-                a: "30-day unconditional refund. Email us, we'll refund immediately. No questions, no hard feelings. This product isn't for everyone, and that's okay."
+                a: "30-day unconditional refund for Lifetime plan. Email us, we'll refund immediately. No questions, no hard feelings. This product isn't for everyone, and that's okay."
               },
             ].map((faq, i) => (
               <div key={i} className="border-b border-leather/10 pb-8">
@@ -585,7 +608,7 @@ export default function Home() {
           </div>
 
           <p className="text-sm font-ui text-ink-light/60" style={{ fontFamily: 'var(--font-family-ui)' }}>
-            3 free time capsules • No credit card required • Private & secure
+            1 free letter • No credit card required • Private & secure
           </p>
         </div>
       </section>
