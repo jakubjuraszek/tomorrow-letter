@@ -371,21 +371,24 @@ export default function Home() {
 
             {/* Lifetime - Featured */}
             <div className="relative bg-ink text-paper border-2 border-gold p-10 transform md:scale-105 shadow-2xl">
-              {/* Early Bird Badge */}
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-gold text-ink text-xs font-semibold uppercase tracking-wider rounded-full font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
-                🔥 First 100: $79
+              {/* Early Bird Badge - Smaller, cleaner */}
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-gold text-ink text-[10px] font-semibold uppercase tracking-[0.25em] rounded-full font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
+                Early Bird
               </div>
 
               <div className="text-sm uppercase tracking-[0.3em] text-paper/60 mb-4 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
                 Best Value
               </div>
 
-              <h3 className="text-3xl font-display font-semibold mb-2" style={{ fontFamily: 'var(--font-family-display)' }}>Lifetime</h3>
+              <h3 className="text-3xl font-display font-semibold mb-3" style={{ fontFamily: 'var(--font-family-display)' }}>Lifetime</h3>
 
-              <div className="flex items-baseline mb-2">
-                <span className="text-7xl font-display font-light" style={{ fontFamily: 'var(--font-family-display)', fontWeight: 300 }}>$99</span>
+              {/* Price with strikethrough */}
+              <div className="flex items-baseline gap-3 mb-2">
+                <span className="text-7xl font-display font-light" style={{ fontFamily: 'var(--font-family-display)', fontWeight: 300 }}>$79</span>
+                <span className="text-3xl font-display text-paper/40 line-through" style={{ fontFamily: 'var(--font-family-display)', fontWeight: 300 }}>$99</span>
               </div>
-              <p className="text-xs text-paper/50 mb-8 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>One payment, forever</p>
+              <p className="text-xs text-paper/50 mb-1 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>One payment, forever</p>
+              <p className="text-xs text-gold uppercase tracking-wider mb-8 font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>First 100 users only</p>
 
               <ul className="space-y-4 mb-10 text-base text-paper/90" style={{ fontFamily: 'var(--font-family-ui)' }}>
                 <li className="flex items-start gap-3">
