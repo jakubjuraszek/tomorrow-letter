@@ -15,7 +15,7 @@ export default function Home() {
         }}
       />
 
-      {/* SECTION 1: HERO - Founder Story */}
+      {/* SECTION 1: HERO - User Regret + Founder Story Hybrid */}
       <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20">
         <div className="max-w-3xl mx-auto text-center space-y-8 animate-in fade-in duration-1000">
           {/* Overline */}
@@ -23,10 +23,10 @@ export default function Home() {
             className="text-[11px] uppercase tracking-[0.4em] text-ink-light/40 font-ui"
             style={{ fontFamily: 'var(--font-family-ui)' }}
           >
-            From someone who lost their letter
+            What if you had written 5 years ago?
           </p>
 
-          {/* Main Headline */}
+          {/* Main Headline - User Regret */}
           <h1
             className="text-5xl md:text-7xl lg:text-8xl font-display font-light text-ink leading-[1.15] tracking-tight"
             style={{
@@ -34,11 +34,11 @@ export default function Home() {
               fontWeight: 300
             }}
           >
-            Five years ago,
+            You'd know exactly
             <br />
-            I wrote to my future self.
+            where you were.
             <br />
-            Then I lost it.
+            <span className="text-ink-light/60">You didn't write it.</span>
           </h1>
 
           {/* Decorative Divider */}
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="w-1 h-1 rounded-full bg-gold opacity-60" />
           </div>
 
-          {/* Story */}
+          {/* Story - Pivot to Founder */}
           <div
             className="text-lg md:text-xl font-body text-ink-light/80 leading-loose max-w-xl mx-auto space-y-4"
             style={{
@@ -54,23 +54,23 @@ export default function Home() {
               lineHeight: 1.8
             }}
           >
-            <p>I searched everywhere. Never found it.</p>
-            <p>I looked for a tool that would keep it safe.</p>
-            <p>Nothing existed.</p>
-            <p className="font-semibold text-ink">So I built it.</p>
+            <p>Neither did I.</p>
+            <p>I wrote to my future self five years ago. Then I lost it.</p>
+            <p>I looked for a tool that would keep it safe. Nothing existed.</p>
+            <p className="font-semibold text-ink">So I built it for both of us.</p>
           </div>
 
-          {/* Value Prop */}
+          {/* Value Prop - Urgency */}
           <div className="pt-4">
             <p
               className="text-base md:text-lg font-ui text-ink-light/70 max-w-lg mx-auto leading-relaxed"
               style={{ fontFamily: 'var(--font-family-ui)', lineHeight: 1.7 }}
             >
-              Tomorrow's Letter keeps your words safe.
+              You can't go back.
               <br />
-              Write now. Read when you're ready.
+              But you can write today.
               <br />
-              You'll be a different person by then.
+              <span className="font-semibold text-ink">Five years from now, you'll be glad you did.</span>
             </p>
           </div>
 
