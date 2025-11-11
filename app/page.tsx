@@ -77,7 +77,7 @@ export default function Home() {
           {/* CTA */}
           <div className="pt-8">
             <a
-              href="#start"
+              href="/questions"
               className="group inline-flex items-center gap-3 text-base font-ui text-ink border-b-2 border-ink pb-1 hover:border-gold hover:text-gold transition-all duration-500"
               style={{ fontFamily: 'var(--font-family-ui)' }}
             >
@@ -364,9 +364,9 @@ export default function Home() {
                 </li>
               </ul>
 
-              <button className="w-full py-4 border border-ink/20 text-ink text-sm font-semibold uppercase tracking-wider hover:bg-ink/5 transition-colors font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
+              <a href="/questions" className="block w-full py-4 border border-ink/20 text-ink text-sm font-semibold uppercase tracking-wider hover:bg-ink/5 transition-colors font-ui text-center" style={{ fontFamily: 'var(--font-family-ui)' }}>
                 Begin Journey
-              </button>
+              </a>
             </div>
 
             {/* Lifetime - Featured */}
@@ -447,9 +447,9 @@ export default function Home() {
                 </li>
               </ul>
 
-              <button className="w-full py-4 bg-gold text-ink text-sm font-semibold uppercase tracking-wider hover:bg-gold-dark transition-colors font-ui" style={{ fontFamily: 'var(--font-family-ui)' }}>
+              <a href="/questions" className="block w-full py-4 bg-gold text-ink text-sm font-semibold uppercase tracking-wider hover:bg-gold-dark transition-colors font-ui text-center" style={{ fontFamily: 'var(--font-family-ui)' }}>
                 Get Lifetime Access
-              </button>
+              </a>
             </div>
           </div>
 
@@ -598,7 +598,7 @@ export default function Home() {
 
           <div>
             <a
-              href="#start"
+              href="/questions"
               className="inline-block group"
             >
               <span
